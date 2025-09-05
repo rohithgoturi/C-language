@@ -38,3 +38,32 @@ int main()
 
     return 0;
 }
+
+
+
+/* Direct Method 
+
+#include <stdio.h>
+
+int main () {
+    int minElement, size;
+    printf("Enter the Size of Array: ");
+    scanf("%d",&size);
+
+    int arr[size];
+    printf("Enter Array Elements: ");
+    for(int i = 0; i<size; i++){
+        scanf("%d", &arr[i]);
+    }
+
+    minElement = arr[0];
+    for(int i = 0; i<size; i++) {
+        if(minElement > arr[i]) {
+            minElement = arr[i];
+        }
+    }
+
+    printf("Smallest Element is : %d", minElement);
+
+    return 0;
+} */
